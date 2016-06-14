@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M-Diary</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="timeline">Time Line</string>
+    <string name="calendar">Calendar</string>
+    <string name="photos">Photos</string>
+    <string name="maps">Maps</string>
+    <string name="settings">Settings</string>
+
+
+
+    <string name="search_hint">Enter keywords</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+
+    //Dialog Remove photo
+    <string name="remove_photo_dialog_title">Remove Photo</string>
+    <string name="remove_photo_dialog_message">This will remove the current selected image</string>
+
+    //Dialog Remove audio
+    <string name="remove_audio_dialog_title">Remove Audio</string>
+    <string name="remove_audio_dialog_message">This will remove the current selected audio sound</string>
+
+
+    //Dialog remove video
+    <string name="remove_video_dialog_title">Remove Video</string>
+    <string name="remove_video_dialog_message">This will remove the current selected Video</string>
+
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+
+    //Delete record
+    <string name="delete_record_confirmation">Do you really want to delete this record permanently?</string>
+    <string name="delete_record_title">Delete Record</string>
+
+    //image gridview
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+
+
+
+
+<string name="lorem_ipsum">
+<![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.
+
+]]>
+</string>
+
+
+
+</resources>

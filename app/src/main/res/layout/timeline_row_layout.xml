@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+   >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageview_thumbnail"
+            android:src="@drawable/photographer"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/separator"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:text="25 Ashford"
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:maxLength="10"
+            android:ellipsize="end"
+            android:id="@+id/textview_location"
+            android:drawableLeft="@drawable/ic_action_place_textview_green"
+            tools:ignore="RtlCompat"
+            android:layout_gravity="left|bottom"
+            android:layout_below="@+id/content_text_view"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="This is where most of the content will go so they user cna see"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:id="@+id/content_text_view"
+            android:paddingLeft="5dp"
+            tools:ignore="RtlCompat"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_gravity="right|top"
+            android:layout_alignBottom="@+id/imageview_thumbnail"
+            android:layout_toEndOf="@+id/imageview_thumbnail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="17:00"
+            android:id="@+id/textview_time"
+            android:textStyle="bold"
+            android:paddingRight="15dp"
+            android:layout_gravity="right|top"
+            android:layout_alignTop="@+id/imageview_thumbnail"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/separator"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textview_time"
+        android:textColor="@color/LightSeaGreen" />
+</RelativeLayout>

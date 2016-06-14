@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <EditText
+           android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:layout_height="484dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="This is a random text that is supposed to show where the content will go !"
+            android:id="@+id/content_edittext_view"
+            android:layout_gravity="top"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+    </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView"
+            >
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_location"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_place"
+                    android:paddingRight="20dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_weather"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/weather"
+                    android:paddingRight="20dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_camera"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_camera"
+                    android:paddingRight="20dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_image"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_picture"
+                    android:paddingRight="20dp"
+
+                    android:background="@null"
+                    />
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_video"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_video"
+                    android:paddingRight="20dp"
+                    android:background="@null"/>
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imagebutton_mic"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_action_mic"
+                    android:paddingRight="20dp"
+                    android:background="@null"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="|a"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:background="@null"
+                    android:id="@+id/button_cursor_left" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="a|"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:background="@null"
+                    android:id="@+id/button_cursor_right"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+
+</LinearLayout>

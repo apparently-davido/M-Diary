@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:id="@+id/imageview_fragment_item" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_weight="0.11" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="11"
+                android:textSize="45sp"
+                android:id="@+id/day_textview_viewactivity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="March 2015"
+                android:id="@+id/month_and_year_textview_viewactivity"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/day_textview_viewactivity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Wednesday 12:06"
+                android:id="@+id/weekday_and_time_textview_viewactivity"
+                android:layout_below="@+id/month_and_year_textview_viewactivity"
+                android:layout_toEndOf="@+id/day_textview_viewactivity" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The content goes in here"
+                android:id="@+id/content_textview_viewactivity"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:clickable="true"
+                class="com.example.davidoyeku.custom_classes.ClickableFrameLayout"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/border_lines"
+                    android:id="@+id/audio_frame_layout">
+
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_action_mic_dark_green"
+                        android:layout_gravity="left|center_vertical" />
+
+                </LinearLayout>
+
+            </view>
+
+
+            <view
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:clickable="true"
+                    class="com.example.davidoyeku.custom_classes.ClickableFrameLayout"
+                    android:id="@+id/view"
+                    >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/border_lines"
+                    android:id="@+id/video_frame_layout">
+
+                    <ImageView
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/ic_action_video_green"
+                        android:layout_gravity="left|center_vertical" />
+
+                </LinearLayout>
+            </view>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mapView" android:layout_width="fill_parent" android:layout_height="200dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
